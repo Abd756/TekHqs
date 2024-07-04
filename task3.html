@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="task3.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task6</title>
+    <script>
+        function bill(){
+           let bill= document.getElementById('billAmount').value;
+           
+           var myRating=document.getElementById('serviceRating').value;
+           var friendRating=document.getElementById('friendRating').value;
+           let amount=Number(bill);
+           if(myRating=='bad'){
+            myRating=10;
+           }
+           else if(myRating=='good'){
+            myRating=20;
+           }
+           else if(myRating=='perfect'){
+            myRating=50;
+           }
+           if(friendRating=='bad'){
+            friendRating=10;
+           }
+           else if(friendRating=='good'){
+            friendRating=20;
+           }
+           else if(friendRating=='perfect'){
+            friendRating=50;
+           }
+           if(bill==""){
+            alert("Enter the amount")
+           }
+            else{
+           let Tip=Number(friendRating)+Number(myRating);
+           let total=Tip+amount;
+            document.getElementById('get').textContent="Your total bill "+total+"( Bill="+bill+" Tip="+ Tip+")";
+         }
+    }
+        function resetForm() {
+            document.getElementById('billAmount').value = '';
+            document.getElementById('serviceRating').selectedIndex = 0; 
+            document.getElementById('friendRating').selectedIndex = 0;
+            document.getElementById('get').textContent="";
+        }
+    </script>
+</head>
+<body>
+    <h1>Task6</h1>
+    <div class="container">
+        <div class="bill">
+            <p style="font-weight: 600;">How much was the bill?</p>
+            <input type="text" id="billAmount" class="ab" >
+        </div>
+        <div class="bill">
+            <p style="font-weight: 600;">How did you like the Service?</p>
+            <select id="serviceRating" name="serviceRating" class="ab">
+                <option value=""></option>
+                <option value="bad">bad</option>
+                <option value="good">good</option>
+                <option value="Perfect">Perfect</option>
+            </select>
+        </div>
+        <div class="bill">
+            <p style="font-weight: 600;">How did your friend like the Service?</p>
+            <select id="friendRating" name="friendRating" class="ab">
+                <option value=""></option>
+                <option value="bad">bad</option>
+                <option value="good">good</option>
+                <option value="Perfect">Perfect</option>
+            </select>
+        </div class="bottom">
+        <div class="total">
+            
+            <button onclick="bill()" > Total</button>
+            <p id="get"></p>
+        </div>
+        <button onclick="resetForm()">Reset</button>
+    </div>
+</body>
+</html>

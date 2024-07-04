@@ -1,0 +1,24 @@
+.container{
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+.bill{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.ab {
+    margin-left: 10px;
+    box-sizing: border-box;
+    width: 180px;
+    height: 15  px;
+    border: 2px solid;
+    margin-top: 9px;
+    margin-bottom: 10px;
+}
