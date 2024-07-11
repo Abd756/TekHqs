@@ -1,0 +1,97 @@
+.container{
+    width: 80vw;
+    margin: auto;
+    padding: 0;
+}
+
+#heading{
+    text-align: center;
+}
+#img{
+    height: 65px;
+}
+.item1,.item2,.item4,.item5 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wraps;
+}
+
+
+.item1{
+    text-align: center;
+    background-color:rgb(255,159,42);
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    
+}
+.item2{
+    margin-top: -10px;
+    background-color: rgb(210,105,30);
+    
+}
+
+.item2 > p,select,input,button{
+    margin: 10px;
+    padding: 10px 10px;
+     
+    
+} 
+#item3{
+    display: block;
+    
+    height: 50vh;
+    background-color: rgb(241, 169, 118);
+
+}
+.item4{
+    background-color: rgb(241, 169, 118);
+    margin-top: -4px;
+    
+}
+#list,#add{
+    border-radius: 15px;
+    border: 0px; 
+    cursor: pointer;
+    border: 1px;
+}
+.item5{
+    background-color: rgb(124,176,177);
+    height: 10vh;
+    padding-bottom: 10px;
+   
+
+}
+
+#result{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgb(33, 37, 41);
+}
+#id{
+    display: flex;
+    border: 5px;
+    border-radius: 5px;
+}
+#InnerDiv{
+    padding: 10px;
+    border-radius: 30px;
+    display: inline-block;
+    padding-left: 10px;
+    margin-left: 11px;
+    margin-top: 10px;
+    background-color: aliceblue;
+}
+
+#cross{
+    display: inline;
+    padding-left: 5px;
+    cursor: pointer;
+    color: red;
+}
+
+#CheckBox{
+    padding-right: 5px;
+}
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="task_5.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6</title>
+</head>
+<body>
+    <h1 id="heading">Task 6</h1>
+
+    <div class="container">
+        <div class="item1">
+            <img src="Palm-Tree-Flat-icon.png" alt="PalmTree" id="img">
+            <h3>FAR AWAY</h3>
+            <img src="Suitcase_Flat_Icon_Vector.svg.png" alt="SuitCase" id="img">
+        </div>
+        <div class="item2">
+            <p>What do you need for your trip?</p>
+            <select name="number" id="scroll" aria-placeholder="options">
+              <!-- <option value="">Select Option</option> -->
+            </select>
+            <input type="text" id="item_name" placeholder="items...">
+            <button id="add" onclick="add()"> Add</button>
+        </div>
+        <div id="item3">
+            
+
+        </div>
+        <div class="item4">
+            <select name="order" id="ordering" >
+                <option value="1">Sort by Direction</option>
+                <option value="2" id="asc" onclick="sorting()">A-Z</option>
+                <option value="3" id="desc" onclick="sorting()">Z-A</option>
+            </select>
+            <button id="list" onclick="clearList()">Clear List</button>
+        </div>
+        <div class="item5">
+            <p id="result">
+                Start adding some Items to your packing list 
+            </p>
+        </div>
+    </div>
+    <script src="task_5.js"></script>
+    
+</body>
+</html>
